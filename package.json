@@ -1,13 +1,7 @@
 {
-  "name": "inbox",
+  "name": "inbox-2",
   "version": "1.1.59",
-  "author": "Andris Reinman",
-  "maintainers": [
-    {
-      "name": "andris",
-      "email": "andris@node.ee"
-    }
-  ],
+  "author": "b3rew",
   "main": "lib/client.js",
   "dependencies": {
     "mimelib": "*",
@@ -21,10 +15,10 @@
   "scripts": {
     "test": "nodeunit test"
   },
-  "homepage": "https://github.com/andris9/inbox",
+  "homepage": "https://github.com/b3rew/inbox",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andris9/inbox.git"
+    "url": "https://github.com/b3rew/inbox"
   },
   "license": "MIT"
 }

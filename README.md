@@ -1,6 +1,9 @@
-# inbox
+# Inbox 2.0
 
-**This repository is no longer actively maintained. Please check for any updated forks.**
+**This repository is the exact copy of **[https://github.com/pipedrive/inbox](https://github.com/pipedrive/inbox) **with some minor changes**
+
+### New Changes
+[ x ] createConnection now accepts greeting timeout as an option (`timeout: 10 * 60 * 1000`)
 
 This is a work in progress IMAP client for node.js.
 
@@ -9,15 +12,12 @@ The project consists of two major parts
   * IMAP command parser (token based, more or less complete)
   * IMAP control for accessing mailboxes (under construction)
 
-[![Build Status](https://secure.travis-ci.org/andris9/inbox.png)](http://travis-ci.org/andris9/inbox)
-[![NPM version](https://badge.fury.io/js/inbox.png)](http://badge.fury.io/js/inbox)
-
 
 ## Installation
 
 Install from npm
 
-    npm install inbox
+    npm install inbox-2
 
 ## API
 
@@ -25,7 +25,7 @@ Install from npm
 
 Use **inbox** module
 ```javascript
-var inbox = require("inbox");
+var inbox = require("inbox-2");
 ```
 ### Create new IMAP connection
 
@@ -587,7 +587,7 @@ client.on("new", function(message){
 
 Listing newest 10 messages:
 ```javascript
-var inbox = require("inbox");
+var inbox = require("inbox2");
 
 var client = inbox.createConnection(false, "imap.gmail.com", {
     secureConnection: true,
